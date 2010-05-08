@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* KeePass2_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* KeePass2_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		F70BC698113980D00093025C /* Base64Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70BC697113980D00093025C /* Base64Tests.m */; };
+		F70BC6C7113A39E40093025C /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = F70BC6C5113A39E40093025C /* Base64.h */; };
+		F70BC6C8113A39E40093025C /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F70BC6C6113A39E40093025C /* Base64.m */; };
+		F712013E11169A1E00697435 /* HashedInputData.h in Headers */ = {isa = PBXBuildFile; fileRef = F712013C11169A1E00697435 /* HashedInputData.h */; };
+		F712013F11169A1E00697435 /* HashedInputData.m in Sources */ = {isa = PBXBuildFile; fileRef = F712013D11169A1E00697435 /* HashedInputData.m */; };
+		F7161E86115BACA300320FA1 /* KDB3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB705112711E900B23E44 /* KDB3Tests.m */; };
+		F72AB26F10FA9E25007695B7 /* WrapperNSData.h in Headers */ = {isa = PBXBuildFile; fileRef = F72AB26D10FA9E25007695B7 /* WrapperNSData.h */; };
+		F72AB27010FA9E25007695B7 /* WrapperNSData.m in Sources */ = {isa = PBXBuildFile; fileRef = F72AB26E10FA9E25007695B7 /* WrapperNSData.m */; };
+		F72CAF5410F991AF00E0CF3A /* DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F72CAF5210F991AF00E0CF3A /* DataSource.h */; };
+		F74F178C113CC01B00D2B437 /* RandomStream.h in Headers */ = {isa = PBXBuildFile; fileRef = F74F178A113CC01B00D2B437 /* RandomStream.h */; };
+		F7728E00115E73570034D813 /* KDB4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A181D10EEB448007F47FF /* KDB4Tests.m */; };
+		F77980F3111941BD00634C06 /* GZipInputData.h in Headers */ = {isa = PBXBuildFile; fileRef = F77980F1111941BD00634C06 /* GZipInputData.h */; };
+		F77980F4111941BD00634C06 /* GZipInputData.m in Sources */ = {isa = PBXBuildFile; fileRef = F77980F2111941BD00634C06 /* GZipInputData.m */; };
+		F7798120111A8D2B00634C06 /* DataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7798112111A8C1000634C06 /* DataSourceTests.m */; };
+		F7798182111AA67100634C06 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F7700AE91115497600DD1761 /* libz.dylib */; };
+		F7798183111AA69C00634C06 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F7700AE91115497600DD1761 /* libz.dylib */; };
+		F77981F3111BDA2100634C06 /* Kdb4Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = F77981F1111BDA2100634C06 /* Kdb4Parser.h */; };
+		F77981F4111BDA2100634C06 /* Kdb4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = F77981F2111BDA2100634C06 /* Kdb4Parser.m */; };
+		F77A187410EEBC96007F47FF /* libKeePass2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libKeePass2.a */; };
+		F7AB6DFF113B09EB00812AB1 /* Arc4RandomStream.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AB6DFD113B09EB00812AB1 /* Arc4RandomStream.h */; };
+		F7AB6E00113B09EB00812AB1 /* Arc4RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AB6DFE113B09EB00812AB1 /* Arc4RandomStream.m */; };
+		F7AB6E11113B131E00812AB1 /* RandomStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AB6E0E113B130D00812AB1 /* RandomStreamTest.m */; };
+		F7AB6F07113B746B00812AB1 /* Salsa20RandomStream.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AB6F05113B746B00812AB1 /* Salsa20RandomStream.h */; };
+		F7AB6F08113B746B00812AB1 /* Salsa20RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AB6F06113B746B00812AB1 /* Salsa20RandomStream.m */; };
+		F7AC6BF411339FA30033AA12 /* Kdb3Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AC6BF211339FA30033AA12 /* Kdb3Writer.h */; };
+		F7AC6BF511339FA30033AA12 /* Kdb3Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC6BF311339FA30033AA12 /* Kdb3Writer.m */; };
+		F7AC6C501133B42C0033AA12 /* Kdb3Persist.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AC6C4E1133B42C0033AA12 /* Kdb3Persist.h */; };
+		F7AC6C511133B42C0033AA12 /* Kdb3Persist.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC6C4F1133B42C0033AA12 /* Kdb3Persist.m */; };
+		F7BA281C10F2E92D005DF683 /* ByteBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BA281A10F2E92D005DF683 /* ByteBuffer.h */; };
+		F7BA281D10F2E92D005DF683 /* ByteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BA281B10F2E92D005DF683 /* ByteBuffer.m */; };
+		F7BA283010F2EDDA005DF683 /* MiscTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BA282710F2ED3A005DF683 /* MiscTests.m */; };
+		F7BA290710F45316005DF683 /* KdbPassword.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BA290510F45316005DF683 /* KdbPassword.h */; };
+		F7BA290810F45316005DF683 /* KdbPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BA290610F45316005DF683 /* KdbPassword.m */; };
+		F7BA296310F6E28B005DF683 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BA296110F6E28B005DF683 /* Utils.h */; };
+		F7BA296410F6E28B005DF683 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BA296210F6E28B005DF683 /* Utils.m */; };
+		F7BEB3061123CF5E00B23E44 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEB3041123CF5E00B23E44 /* Node.h */; };
+		F7BEB3071123CF5E00B23E44 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB3051123CF5E00B23E44 /* Node.m */; };
+		F7BEB3371125042E00B23E44 /* Tree.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEB3351125042E00B23E44 /* Tree.h */; };
+		F7BEB3381125042E00B23E44 /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB3361125042E00B23E44 /* Tree.m */; };
+		F7BEB35D1125051500B23E44 /* Stack.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEB35B1125051500B23E44 /* Stack.h */; };
+		F7BEB35E1125051500B23E44 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB35C1125051500B23E44 /* Stack.m */; };
+		F7BEB3F2112520F400B23E44 /* ParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB3F1112520F400B23E44 /* ParserTests.m */; };
+		F7BEB3FB1125221300B23E44 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BEB3FA1125221300B23E44 /* libxml2.dylib */; };
+		F7BEB3FC1125223C00B23E44 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BEB3FA1125221300B23E44 /* libxml2.dylib */; };
+		F7BEB67C112676C100B23E44 /* Kdb3Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEB67A112676C100B23E44 /* Kdb3Reader.h */; };
+		F7BEB68011267B2900B23E44 /* Kdb3Node.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEB67E11267B2900B23E44 /* Kdb3Node.h */; };
+		F7BEB68111267B2900B23E44 /* Kdb3Node.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB67F11267B2900B23E44 /* Kdb3Node.m */; };
+		F7BEB68311267BE700B23E44 /* Kdb3Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB68211267BE700B23E44 /* Kdb3Reader.m */; };
+		F7BEB6BD1126FB8700B23E44 /* Kdb3Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEB6BB1126FB8700B23E44 /* Kdb3Parser.h */; };
+		F7BEB6BE1126FB8700B23E44 /* Kdb3Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB6BC1126FB8700B23E44 /* Kdb3Parser.m */; };
+		F7BEB8A81127D62100B23E44 /* Kdb3Date.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEB8A61127D62100B23E44 /* Kdb3Date.h */; };
+		F7BEB8A91127D62100B23E44 /* Kdb3Date.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEB8A71127D62100B23E44 /* Kdb3Date.m */; };
+		F7BEBA7D112BB82700B23E44 /* BinaryContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEBA7B112BB82700B23E44 /* BinaryContainer.h */; };
+		F7BEBA7E112BB82700B23E44 /* BinaryContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBA7C112BB82700B23E44 /* BinaryContainer.m */; };
+		F7BEBCBC112E37A500B23E44 /* AESDecryptSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BEBCBA112E37A500B23E44 /* AESDecryptSource.h */; };
+		F7BEBCBD112E37A500B23E44 /* AESDecryptSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBCBB112E37A500B23E44 /* AESDecryptSource.m */; };
+		F7DA222B114606D9005A0BE1 /* KdbReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F7DA2229114606D9005A0BE1 /* KdbReader.h */; };
+		F7DA222F114607C0005A0BE1 /* KdbReaderFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = F7DA222D114607C0005A0BE1 /* KdbReaderFactory.h */; };
+		F7DA2230114607C0005A0BE1 /* KdbReaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA222E114607C0005A0BE1 /* KdbReaderFactory.m */; };
+		F7DA9B2B11436812001178B3 /* KdbLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F7DA9B2911436812001178B3 /* KdbLib.h */; };
+		F7E166991134D7E300B9E88B /* Kdb4Node.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E166971134D7E300B9E88B /* Kdb4Node.h */; };
+		F7E1669A1134D7E300B9E88B /* Kdb4Node.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E166981134D7E300B9E88B /* Kdb4Node.m */; };
+		F7E3137010F170B60039C2DB /* Kdb4Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E3136E10F170B60039C2DB /* Kdb4Reader.h */; };
+		F7E3137110F170B60039C2DB /* Kdb4Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E3136F10F170B60039C2DB /* Kdb4Reader.m */; };
+		F7E6065810EF2591007381E0 /* Kdb.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E6065610EF2591007381E0 /* Kdb.h */; };
+		F7E6067C10EFADD9007381E0 /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E6067A10EFADD9007381E0 /* UUID.h */; };
+		F7E6067D10EFADD9007381E0 /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E6067B10EFADD9007381E0 /* UUID.m */; };
+		F7FAEF00113204FF00B89F0E /* AESEncryptSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FAEEFE113204FF00B89F0E /* AESEncryptSource.h */; };
+		F7FAEF01113204FF00B89F0E /* AESEncryptSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FAEEFF113204FF00B89F0E /* AESEncryptSource.m */; };
+		F7FAEF3E1132425300B89F0E /* AESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FAEF3D1132425300B89F0E /* AESTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F77A185410EEBC46007F47FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = KeePass2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* KeePass2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeePass2_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libKeePass2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKeePass2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70BC696113980D00093025C /* Base64Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Tests.h; sourceTree = "<group>"; };
+		F70BC697113980D00093025C /* Base64Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Tests.m; sourceTree = "<group>"; };
+		F70BC6C5113A39E40093025C /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		F70BC6C6113A39E40093025C /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		F712013C11169A1E00697435 /* HashedInputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashedInputData.h; sourceTree = "<group>"; };
+		F712013D11169A1E00697435 /* HashedInputData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashedInputData.m; sourceTree = "<group>"; };
+		F72AB26D10FA9E25007695B7 /* WrapperNSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapperNSData.h; sourceTree = "<group>"; };
+		F72AB26E10FA9E25007695B7 /* WrapperNSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapperNSData.m; sourceTree = "<group>"; };
+		F72CAF5210F991AF00E0CF3A /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		F74F178A113CC01B00D2B437 /* RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomStream.h; sourceTree = "<group>"; };
+		F7700ADE1115488A00DD1761 /* dylib1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib1.o; path = usr/lib/dylib1.o; sourceTree = SDKROOT; };
+		F7700AE91115497600DD1761 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F77980F1111941BD00634C06 /* GZipInputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZipInputData.h; sourceTree = "<group>"; };
+		F77980F2111941BD00634C06 /* GZipInputData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZipInputData.m; sourceTree = "<group>"; };
+		F7798111111A8C1000634C06 /* DataSourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceTests.h; sourceTree = "<group>"; };
+		F7798112111A8C1000634C06 /* DataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceTests.m; sourceTree = "<group>"; };
+		F77981F1111BDA2100634C06 /* Kdb4Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Parser.h; sourceTree = "<group>"; };
+		F77981F2111BDA2100634C06 /* Kdb4Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Parser.m; sourceTree = "<group>"; };
+		F77A181110EEB3E9007F47FF /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77A181210EEB3E9007F47FF /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
+		F77A181C10EEB448007F47FF /* KDB4Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDB4Tests.h; sourceTree = "<group>"; };
+		F77A181D10EEB448007F47FF /* KDB4Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDB4Tests.m; sourceTree = "<group>"; };
+		F7AB6DFD113B09EB00812AB1 /* Arc4RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arc4RandomStream.h; sourceTree = "<group>"; };
+		F7AB6DFE113B09EB00812AB1 /* Arc4RandomStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arc4RandomStream.m; sourceTree = "<group>"; };
+		F7AB6E0D113B130D00812AB1 /* RandomStreamTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomStreamTest.h; sourceTree = "<group>"; };
+		F7AB6E0E113B130D00812AB1 /* RandomStreamTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomStreamTest.m; sourceTree = "<group>"; };
+		F7AB6F05113B746B00812AB1 /* Salsa20RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Salsa20RandomStream.h; sourceTree = "<group>"; };
+		F7AB6F06113B746B00812AB1 /* Salsa20RandomStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Salsa20RandomStream.m; sourceTree = "<group>"; };
+		F7AC6BF211339FA30033AA12 /* Kdb3Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Writer.h; sourceTree = "<group>"; };
+		F7AC6BF311339FA30033AA12 /* Kdb3Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Writer.m; sourceTree = "<group>"; };
+		F7AC6C4E1133B42C0033AA12 /* Kdb3Persist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Persist.h; sourceTree = "<group>"; };
+		F7AC6C4F1133B42C0033AA12 /* Kdb3Persist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Persist.m; sourceTree = "<group>"; };
+		F7BA281A10F2E92D005DF683 /* ByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteBuffer.h; sourceTree = "<group>"; };
+		F7BA281B10F2E92D005DF683 /* ByteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByteBuffer.m; sourceTree = "<group>"; };
+		F7BA282610F2ED3A005DF683 /* MiscTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscTests.h; sourceTree = "<group>"; };
+		F7BA282710F2ED3A005DF683 /* MiscTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscTests.m; sourceTree = "<group>"; };
+		F7BA290510F45316005DF683 /* KdbPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbPassword.h; sourceTree = "<group>"; };
+		F7BA290610F45316005DF683 /* KdbPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KdbPassword.m; sourceTree = "<group>"; };
+		F7BA296110F6E28B005DF683 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F7BA296210F6E28B005DF683 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		F7BEB3041123CF5E00B23E44 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		F7BEB3051123CF5E00B23E44 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		F7BEB3351125042E00B23E44 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		F7BEB3361125042E00B23E44 /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
+		F7BEB35B1125051500B23E44 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		F7BEB35C1125051500B23E44 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		F7BEB3F0112520F400B23E44 /* ParserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserTests.h; sourceTree = "<group>"; };
+		F7BEB3F1112520F400B23E44 /* ParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserTests.m; sourceTree = "<group>"; };
+		F7BEB3FA1125221300B23E44 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		F7BEB67A112676C100B23E44 /* Kdb3Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Reader.h; sourceTree = "<group>"; };
+		F7BEB67E11267B2900B23E44 /* Kdb3Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Node.h; sourceTree = "<group>"; };
+		F7BEB67F11267B2900B23E44 /* Kdb3Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Node.m; sourceTree = "<group>"; };
+		F7BEB68211267BE700B23E44 /* Kdb3Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Reader.m; sourceTree = "<group>"; };
+		F7BEB6BB1126FB8700B23E44 /* Kdb3Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Parser.h; sourceTree = "<group>"; };
+		F7BEB6BC1126FB8700B23E44 /* Kdb3Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Parser.m; sourceTree = "<group>"; };
+		F7BEB704112711E900B23E44 /* KDB3Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDB3Tests.h; sourceTree = "<group>"; };
+		F7BEB705112711E900B23E44 /* KDB3Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDB3Tests.m; sourceTree = "<group>"; };
+		F7BEB8A61127D62100B23E44 /* Kdb3Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb3Date.h; sourceTree = "<group>"; };
+		F7BEB8A71127D62100B23E44 /* Kdb3Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb3Date.m; sourceTree = "<group>"; };
+		F7BEBA7B112BB82700B23E44 /* BinaryContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryContainer.h; sourceTree = "<group>"; };
+		F7BEBA7C112BB82700B23E44 /* BinaryContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryContainer.m; sourceTree = "<group>"; };
+		F7BEBCBA112E37A500B23E44 /* AESDecryptSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESDecryptSource.h; sourceTree = "<group>"; };
+		F7BEBCBB112E37A500B23E44 /* AESDecryptSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESDecryptSource.m; sourceTree = "<group>"; };
+		F7DA2229114606D9005A0BE1 /* KdbReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbReader.h; sourceTree = "<group>"; };
+		F7DA222D114607C0005A0BE1 /* KdbReaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbReaderFactory.h; sourceTree = "<group>"; };
+		F7DA222E114607C0005A0BE1 /* KdbReaderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KdbReaderFactory.m; sourceTree = "<group>"; };
+		F7DA9B2911436812001178B3 /* KdbLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdbLib.h; sourceTree = "<group>"; };
+		F7E166971134D7E300B9E88B /* Kdb4Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Node.h; sourceTree = "<group>"; };
+		F7E166981134D7E300B9E88B /* Kdb4Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Node.m; sourceTree = "<group>"; };
+		F7E3136E10F170B60039C2DB /* Kdb4Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb4Reader.h; sourceTree = "<group>"; };
+		F7E3136F10F170B60039C2DB /* Kdb4Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kdb4Reader.m; sourceTree = "<group>"; };
+		F7E6065610EF2591007381E0 /* Kdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kdb.h; sourceTree = "<group>"; };
+		F7E6067A10EFADD9007381E0 /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		F7E6067B10EFADD9007381E0 /* UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUID.m; sourceTree = "<group>"; };
+		F7FAEEFE113204FF00B89F0E /* AESEncryptSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncryptSource.h; sourceTree = "<group>"; };
+		F7FAEEFF113204FF00B89F0E /* AESEncryptSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncryptSource.m; sourceTree = "<group>"; };
+		F7FAEF3C1132425300B89F0E /* AESTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESTests.h; sourceTree = "<group>"; };
+		F7FAEF3D1132425300B89F0E /* AESTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				F7798182111AA67100634C06 /* libz.dylib in Frameworks */,
+				F7BEB3FB1125221300B23E44 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77A180E10EEB3E9007F47FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77A187410EEBC96007F47FF /* libKeePass2.a in Frameworks */,
+				F7798183111AA69C00634C06 /* libz.dylib in Frameworks */,
+				F7BEB3FC1125223C00B23E44 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libKeePass2.a */,
+				F77A181110EEB3E9007F47FF /* LogicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* KeePass2 */ = {
+			isa = PBXGroup;
+			children = (
+				F77A181A10EEB40D007F47FF /* Tests */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				F77A181210EEB3E9007F47FF /* LogicTests-Info.plist */,
+				F7700ADE1115488A00DD1761 /* dylib1.o */,
+				F7700AE91115497600DD1761 /* libz.dylib */,
+				F7BEB3FA1125221300B23E44 /* libxml2.dylib */,
+			);
+			name = KeePass2;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F77A182710EEB538007F47FF /* KDB */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* KeePass2_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F77A180410EEB2D6007F47FF /* Ver4 */ = {
+			isa = PBXGroup;
+			children = (
+				F7BEB3041123CF5E00B23E44 /* Node.h */,
+				F7BEB3051123CF5E00B23E44 /* Node.m */,
+				F7BEB3351125042E00B23E44 /* Tree.h */,
+				F7BEB3361125042E00B23E44 /* Tree.m */,
+				F77981F1111BDA2100634C06 /* Kdb4Parser.h */,
+				F77981F2111BDA2100634C06 /* Kdb4Parser.m */,
+				F7E3136E10F170B60039C2DB /* Kdb4Reader.h */,
+				F7E3136F10F170B60039C2DB /* Kdb4Reader.m */,
+				F712013C11169A1E00697435 /* HashedInputData.h */,
+				F712013D11169A1E00697435 /* HashedInputData.m */,
+				F77980F1111941BD00634C06 /* GZipInputData.h */,
+				F77980F2111941BD00634C06 /* GZipInputData.m */,
+				F7E166971134D7E300B9E88B /* Kdb4Node.h */,
+				F7E166981134D7E300B9E88B /* Kdb4Node.m */,
+				F70BC6C5113A39E40093025C /* Base64.h */,
+				F70BC6C6113A39E40093025C /* Base64.m */,
+				F7AB6DFD113B09EB00812AB1 /* Arc4RandomStream.h */,
+				F7AB6DFE113B09EB00812AB1 /* Arc4RandomStream.m */,
+				F7AB6F05113B746B00812AB1 /* Salsa20RandomStream.h */,
+				F7AB6F06113B746B00812AB1 /* Salsa20RandomStream.m */,
+				F74F178A113CC01B00D2B437 /* RandomStream.h */,
+			);
+			name = Ver4;
+			sourceTree = "<group>";
+		};
+		F77A181A10EEB40D007F47FF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F77A181C10EEB448007F47FF /* KDB4Tests.h */,
+				F77A181D10EEB448007F47FF /* KDB4Tests.m */,
+				F7BA282610F2ED3A005DF683 /* MiscTests.h */,
+				F7BA282710F2ED3A005DF683 /* MiscTests.m */,
+				F7798111111A8C1000634C06 /* DataSourceTests.h */,
+				F7798112111A8C1000634C06 /* DataSourceTests.m */,
+				F7BEB3F0112520F400B23E44 /* ParserTests.h */,
+				F7BEB3F1112520F400B23E44 /* ParserTests.m */,
+				F7BEB704112711E900B23E44 /* KDB3Tests.h */,
+				F7BEB705112711E900B23E44 /* KDB3Tests.m */,
+				F7FAEF3C1132425300B89F0E /* AESTests.h */,
+				F7FAEF3D1132425300B89F0E /* AESTests.m */,
+				F70BC696113980D00093025C /* Base64Tests.h */,
+				F70BC697113980D00093025C /* Base64Tests.m */,
+				F7AB6E0D113B130D00812AB1 /* RandomStreamTest.h */,
+				F7AB6E0E113B130D00812AB1 /* RandomStreamTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		F77A182710EEB538007F47FF /* KDB */ = {
+			isa = PBXGroup;
+			children = (
+				F7BEBBDA112C498E00B23E44 /* AES */,
+				F7BEB6791126767E00B23E44 /* Ver3 */,
+				F77A180410EEB2D6007F47FF /* Ver4 */,
+				F72CAF5210F991AF00E0CF3A /* DataSource.h */,
+				F7E6067A10EFADD9007381E0 /* UUID.h */,
+				F7E6067B10EFADD9007381E0 /* UUID.m */,
+				F7BA281A10F2E92D005DF683 /* ByteBuffer.h */,
+				F7BA281B10F2E92D005DF683 /* ByteBuffer.m */,
+				F7BA296110F6E28B005DF683 /* Utils.h */,
+				F7BA296210F6E28B005DF683 /* Utils.m */,
+				F7E6065610EF2591007381E0 /* Kdb.h */,
+				F7DA9B2911436812001178B3 /* KdbLib.h */,
+				F7BA290510F45316005DF683 /* KdbPassword.h */,
+				F7BA290610F45316005DF683 /* KdbPassword.m */,
+				F7BEB35B1125051500B23E44 /* Stack.h */,
+				F7BEB35C1125051500B23E44 /* Stack.m */,
+				F72AB26D10FA9E25007695B7 /* WrapperNSData.h */,
+				F72AB26E10FA9E25007695B7 /* WrapperNSData.m */,
+				F7BEBA7B112BB82700B23E44 /* BinaryContainer.h */,
+				F7BEBA7C112BB82700B23E44 /* BinaryContainer.m */,
+				F7DA2229114606D9005A0BE1 /* KdbReader.h */,
+				F7DA222D114607C0005A0BE1 /* KdbReaderFactory.h */,
+				F7DA222E114607C0005A0BE1 /* KdbReaderFactory.m */,
+			);
+			name = KDB;
+			sourceTree = "<group>";
+		};
+		F7BEB6791126767E00B23E44 /* Ver3 */ = {
+			isa = PBXGroup;
+			children = (
+				F7AC6BF211339FA30033AA12 /* Kdb3Writer.h */,
+				F7AC6BF311339FA30033AA12 /* Kdb3Writer.m */,
+				F7BEB67A112676C100B23E44 /* Kdb3Reader.h */,
+				F7BEB68211267BE700B23E44 /* Kdb3Reader.m */,
+				F7BEB67E11267B2900B23E44 /* Kdb3Node.h */,
+				F7BEB67F11267B2900B23E44 /* Kdb3Node.m */,
+				F7BEB6BB1126FB8700B23E44 /* Kdb3Parser.h */,
+				F7BEB6BC1126FB8700B23E44 /* Kdb3Parser.m */,
+				F7BEB8A61127D62100B23E44 /* Kdb3Date.h */,
+				F7BEB8A71127D62100B23E44 /* Kdb3Date.m */,
+				F7AC6C4E1133B42C0033AA12 /* Kdb3Persist.h */,
+				F7AC6C4F1133B42C0033AA12 /* Kdb3Persist.m */,
+			);
+			name = Ver3;
+			sourceTree = "<group>";
+		};
+		F7BEBBDA112C498E00B23E44 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				F7BEBCBA112E37A500B23E44 /* AESDecryptSource.h */,
+				F7BEBCBB112E37A500B23E44 /* AESDecryptSource.m */,
+				F7FAEEFE113204FF00B89F0E /* AESEncryptSource.h */,
+				F7FAEEFF113204FF00B89F0E /* AESEncryptSource.m */,
+			);
+			name = AES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* KeePass2_Prefix.pch in Headers */,
+				F7E6065810EF2591007381E0 /* Kdb.h in Headers */,
+				F7E6067C10EFADD9007381E0 /* UUID.h in Headers */,
+				F7E3137010F170B60039C2DB /* Kdb4Reader.h in Headers */,
+				F7BA281C10F2E92D005DF683 /* ByteBuffer.h in Headers */,
+				F7BA290710F45316005DF683 /* KdbPassword.h in Headers */,
+				F7BA296310F6E28B005DF683 /* Utils.h in Headers */,
+				F72CAF5410F991AF00E0CF3A /* DataSource.h in Headers */,
+				F72AB26F10FA9E25007695B7 /* WrapperNSData.h in Headers */,
+				F712013E11169A1E00697435 /* HashedInputData.h in Headers */,
+				F77980F3111941BD00634C06 /* GZipInputData.h in Headers */,
+				F77981F3111BDA2100634C06 /* Kdb4Parser.h in Headers */,
+				F7BEB3061123CF5E00B23E44 /* Node.h in Headers */,
+				F7BEB3371125042E00B23E44 /* Tree.h in Headers */,
+				F7BEB35D1125051500B23E44 /* Stack.h in Headers */,
+				F7BEB67C112676C100B23E44 /* Kdb3Reader.h in Headers */,
+				F7BEB68011267B2900B23E44 /* Kdb3Node.h in Headers */,
+				F7BEB6BD1126FB8700B23E44 /* Kdb3Parser.h in Headers */,
+				F7BEB8A81127D62100B23E44 /* Kdb3Date.h in Headers */,
+				F7BEBA7D112BB82700B23E44 /* BinaryContainer.h in Headers */,
+				F7BEBCBC112E37A500B23E44 /* AESDecryptSource.h in Headers */,
+				F7FAEF00113204FF00B89F0E /* AESEncryptSource.h in Headers */,
+				F7AC6BF411339FA30033AA12 /* Kdb3Writer.h in Headers */,
+				F7AC6C501133B42C0033AA12 /* Kdb3Persist.h in Headers */,
+				F7E166991134D7E300B9E88B /* Kdb4Node.h in Headers */,
+				F70BC6C7113A39E40093025C /* Base64.h in Headers */,
+				F7AB6DFF113B09EB00812AB1 /* Arc4RandomStream.h in Headers */,
+				F7AB6F07113B746B00812AB1 /* Salsa20RandomStream.h in Headers */,
+				F74F178C113CC01B00D2B437 /* RandomStream.h in Headers */,
+				F7DA9B2B11436812001178B3 /* KdbLib.h in Headers */,
+				F7DA222B114606D9005A0BE1 /* KdbReader.h in Headers */,
+				F7DA222F114607C0005A0BE1 /* KdbReaderFactory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* KeePass2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "KeePass2" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeePass2;
+			productName = KeePass2;
+			productReference = D2AAC07E0554694100DB518D /* libKeePass2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F77A181010EEB3E9007F47FF /* LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F77A181510EEB3EB007F47FF /* Build configuration list for PBXNativeTarget "LogicTests" */;
+			buildPhases = (
+				F77A180C10EEB3E9007F47FF /* Resources */,
+				F77A180D10EEB3E9007F47FF /* Sources */,
+				F77A180E10EEB3E9007F47FF /* Frameworks */,
+				F77A180F10EEB3E9007F47FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F77A185510EEBC46007F47FF /* PBXTargetDependency */,
+			);
+			name = LogicTests;
+			productName = LogicTests;
+			productReference = F77A181110EEB3E9007F47FF /* LogicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "KeePass2" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* KeePass2 */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* KeePass2 */,
+				F77A181010EEB3E9007F47FF /* LogicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F77A180C10EEB3E9007F47FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F77A180F10EEB3E9007F47FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E6067D10EFADD9007381E0 /* UUID.m in Sources */,
+				F7E3137110F170B60039C2DB /* Kdb4Reader.m in Sources */,
+				F7BA281D10F2E92D005DF683 /* ByteBuffer.m in Sources */,
+				F7BA290810F45316005DF683 /* KdbPassword.m in Sources */,
+				F7BA296410F6E28B005DF683 /* Utils.m in Sources */,
+				F72AB27010FA9E25007695B7 /* WrapperNSData.m in Sources */,
+				F712013F11169A1E00697435 /* HashedInputData.m in Sources */,
+				F77980F4111941BD00634C06 /* GZipInputData.m in Sources */,
+				F77981F4111BDA2100634C06 /* Kdb4Parser.m in Sources */,
+				F7BEB3071123CF5E00B23E44 /* Node.m in Sources */,
+				F7BEB3381125042E00B23E44 /* Tree.m in Sources */,
+				F7BEB35E1125051500B23E44 /* Stack.m in Sources */,
+				F7BEB68111267B2900B23E44 /* Kdb3Node.m in Sources */,
+				F7BEB68311267BE700B23E44 /* Kdb3Reader.m in Sources */,
+				F7BEB6BE1126FB8700B23E44 /* Kdb3Parser.m in Sources */,
+				F7BEB8A91127D62100B23E44 /* Kdb3Date.m in Sources */,
+				F7BEBA7E112BB82700B23E44 /* BinaryContainer.m in Sources */,
+				F7BEBCBD112E37A500B23E44 /* AESDecryptSource.m in Sources */,
+				F7FAEF01113204FF00B89F0E /* AESEncryptSource.m in Sources */,
+				F7AC6BF511339FA30033AA12 /* Kdb3Writer.m in Sources */,
+				F7AC6C511133B42C0033AA12 /* Kdb3Persist.m in Sources */,
+				F7E1669A1134D7E300B9E88B /* Kdb4Node.m in Sources */,
+				F70BC6C8113A39E40093025C /* Base64.m in Sources */,
+				F7AB6E00113B09EB00812AB1 /* Arc4RandomStream.m in Sources */,
+				F7AB6F08113B746B00812AB1 /* Salsa20RandomStream.m in Sources */,
+				F7DA2230114607C0005A0BE1 /* KdbReaderFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77A180D10EEB3E9007F47FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7BA283010F2EDDA005DF683 /* MiscTests.m in Sources */,
+				F7798120111A8D2B00634C06 /* DataSourceTests.m in Sources */,
+				F7BEB3F2112520F400B23E44 /* ParserTests.m in Sources */,
+				F7FAEF3E1132425300B89F0E /* AESTests.m in Sources */,
+				F70BC698113980D00093025C /* Base64Tests.m in Sources */,
+				F7AB6E11113B131E00812AB1 /* RandomStreamTest.m in Sources */,
+				F7161E86115BACA300320FA1 /* KDB3Tests.m in Sources */,
+				F7728E00115E73570034D813 /* KDB4Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F77A185510EEBC46007F47FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* KeePass2 */;
+			targetProxy = F77A185410EEBC46007F47FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/KeePass2.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = KeePass2_Prefix.pch;
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = KeePass2;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/KeePass2.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = KeePass2_Prefix.pch;
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = KeePass2;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+		F77A181310EEB3EB007F47FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F77A181410EEB3EB007F47FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "KeePass2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "KeePass2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F77A181510EEB3EB007F47FF /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77A181310EEB3EB007F47FF /* Debug */,
+				F77A181410EEB3EB007F47FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
